@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--声明一个bean-->
+    <!--    <bean id="user" class="com.chen.ioc.User" init-method="init" destroy-method="destroy">-->
+    <!--        <property name="name" value="blkcor"/>-->
+    <!--    </bean>-->
+    <!--后置处理器放入ioc容器中-->
+    <bean id="myBean" class="com.chen.ioc.MyBean"/>
+
+    <bean id="user" class="com.chen.ioc.MyFactoryBean"/>
+
+</beans>
